@@ -6,7 +6,6 @@
 }
 
 body {
-    width: 100vw;
     height: 100vh;
     font-family: 'Dancing Script', cursive;
     background: #FCF4A3;
@@ -153,18 +152,19 @@ body {
     }
     .banner{
         padding-top:15rem;
+        align-items: center;
     }
 }
 
 /* TABLET PAISAGEM / CELULAR */
-@media(max-width:768px){
+@media(max-width:700px){
     .container{
         max-width: 960px;
         padding: 0 10rem;
     }
     
     .banner{
-        padding-top:10rem;
+        padding-top:15rem;
     }
     .about-flex{
         display: block;
@@ -175,7 +175,7 @@ body {
     }
 
     .about-description__text {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
     
     .about-skills__title {
@@ -188,5 +188,25 @@ body {
 
     .footer-social_links{
         width: 100%;   
+    }
+}
+
+@media(max-width: 500px){
+    .container {
+        padding: 1rem;
+    }
+
+    .banner{
+        padding-top:25rem;
+        align-items: center;
+    }
+
+    .banner-title {
+        font-size: 1.5rem;
+    }
+    
+    .banner__subtitle {
+        font-size: 1rem;
+        margin-bottom: 2rem;
     }
 }
