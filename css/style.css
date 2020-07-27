@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Dancing Script', cursive;
+    background: #FCF4A3;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.banner {
+    background: url(../img/fundo1.jpg) center no-repeat;
+    height: 90vh;
+    color: #EEDC82;
+    background-size: cover;
+    text-align: center;
+    padding-top: 20rem;
+}
+
+.banner-title {
+    font-size: 2.5rem;
+}
+
+.banner__subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2.3rem;
+    color: black;
+}
+
+.btn {
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 3rem;
+}
+
+.btn-white {
+    font-size: 1rem;
+    color: #FFC30B;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid #FFC30B;
+    
+}
+
+.btn-white:hover {
+    color: #FFC30B;
+    background-color: white;
+}
+
+.about-title {
+    font-size: 2.715rem;
+    color: #FCD12A;
+    margin-top: 3rem;
+}
+
+.about-flex {
+    display: flex;
+    margin-top: 1.2rem;
+    line-height:1.5;
+}
+
+.about-description {
+    width: 70%;
+    font-size: 1.10rem;
+    display: inline-block;
+}
+
+.about-description__destaque {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-right: 4rem;
+}
+
+.about-description__text {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    margin-right: 4rem;
+}
+
+.about-skills__title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    
+}
+
+.about-skills__list {
+    padding-left: 1rem;
+    line-height: 1.7rem;
+}
+
+.bnt-yellow {
+    font-size: 1rem;
+    color: #FFC30B;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid #FFC30B;
+}
+
+.bnt-yellow:hover {
+    color: #FFC30B;
+    background-color: white;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-social_links {
+    width: 20%;
+    background-color: #FFC30B;
+    padding: 2rem 1rem;
+    color: black;
+    margin-top: 2rem;
+
+}
+
+.redes-social__img {
+    margin-bottom: 1rem;
+}
+
+.footer-social__title {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.footer-copright {
+    font-size: 1rem;
+    color: black;
+    padding: 2rem;
+    margin: 1rem 0;
+}
+
+/* MEDIA QUERIES */
+/* TABLET PAISAGEM */
+@media (max-width:1024px) {
+    .container{
+        max-width: 960px;
+        padding: 0 5rem;
+    }
+    .banner{
+        padding-top:15rem;
+    }
+}
+
+/* TABLET PAISAGEM / CELULAR */
+@media(max-width:768px){
+    .container{
+        max-width: 960px;
+        padding: 0 10rem;
+    }
+    
+    .banner{
+        padding-top:10rem;
+    }
+    .about-flex{
+        display: block;
+    }
+    
+    .about-description, .about-skills {
+        width:100%;
+    }
+
+    .about-description__text {
+        margin-bottom: 2rem;
+    }
+    
+    .about-skills__title {
+        margin-top:2rem;
+    }
+
+    .footer-social{
+        flex-wrap: wrap;
+    }
+
+    .footer-social_links{
+        width: 100%;   
+    }
+}
